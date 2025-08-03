@@ -140,6 +140,8 @@ Video MP3 olarak indirir.
 
 Bu uygulama sadece eğitim amaçlıdır. YouTube'un Terms of Service'ini ihlal etmemek için dikkatli olun. Telif hakkı korumalı içerikleri indirmeden önce gerekli izinleri aldığınızdan emin olun.
 
+<!-- Project updated -->
+
 
 🧑‍💻 Author
 Fatih Kaya
