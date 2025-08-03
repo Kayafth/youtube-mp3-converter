@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube MP3 Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 YouTube MP3 & MP4 Converter</h1>
+            <p>YouTube videolarını MP3 ses dosyası veya MP4 video dosyası olarak indirin</p>
+        </div>
+
+        <form id="converterForm">
+            <div class="input-group">
+                <label for="youtubeUrl">YouTube Video URL'si:</label>
+                <input type="url" id="youtubeUrl" class="url-input" placeholder="https://www.youtube.com/watch?v=..."
+                    required>
+            </div>
+
+            <button type="submit" class="btn" id="getInfoBtn">
+                Video Bilgilerini Al
+            </button>
+        </form>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <div>İşleniyor...</div>
+        </div>
+
+        <div class="error" id="error"></div>
+        <div class="success" id="success"></div>
+
+        <div class="video-info" id="videoInfo">
+            <img id="thumbnail" src="" alt="Video Thumbnail">
+            <div class="video-title" id="videoTitle"></div>
+            <div class="video-author" id="videoAuthor"></div>
+
+            <div class="format-selection">
+                <h4>📥 İndirme Formatı:</h4>
+                <div class="format-buttons">
+                    <button type="button" class="format-btn active" data-format="mp3">
+                        🎵 MP3 (Ses)
+                    </button>
+                    <button type="button" class="format-btn" data-format="mp4">
+                        🎬 MP4 (Video)
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="btn" id="downloadBtn">
+                MP3 Olarak İndir
+            </button>
+        </div>
+
+        <div class="features">
+            <h3>Özellikler</h3>
+            <div class="feature-list">
+                <div class="feature">
+                    <strong>MP3 & MP4</strong><br>
+                    Ses ve video formatları
+                </div>
+                <div class="feature">
+                    <strong>Hızlı Dönüştürme</strong><br>
+                    Yüksek kaliteli çıktı
+                </div>
+                <div class="feature">
+                    <strong>Ücretsiz</strong><br>
+                    Tamamen bedava kullanım
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
